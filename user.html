@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>哔哔打车</title>
+<link rel="stylesheet" href="css/css3.css">
+<link rel="stylesheet" type="text/css" href="css/bgstretcher.css" />
+<script src="js/jquery.js"></script>
+<script src="js/javascript.js"></script>
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+<script type="text/javascript" src="js/bgstretcher.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+        //  Initialize Backgound Stretcher	   
+		$('BODY').bgStretcher({
+			images: ['image/sample-1.jpg', 'image/sample-2.jpg', 'image/sample-3.jpg'],
+			imageWidth: 1024, 
+			imageHeight: 768, 
+			slideDirection: 'N',
+			slideShowSpeed: 1000,
+			transitionEffect: 'fade',
+			sequenceMode: 'normal',
+			buttonPrev: '#prev',
+			buttonNext: '#next',
+			pagination: '#nav',
+			anchoring: 'left center',
+			anchoringImg: 'left center'
+		});
+	});
+</script>
+</head>
+
+<body>
+<header id="header_driver">
+		<a href="/bibi/logout"><p>注销</p></a>
+		<a href="register.html"><p>注册</p></a>
+	</header>
+<article class="main">
+	<!--<div id="news">
+			<img src="/DBS/image/sunset.jpg" width=100% height=400px  style="margin-top : 10px;border-radius:10px;">
+	</div>-->
+	<p style="font-size:1.6em;font-weight:bolder;color:black;margin-top:60px;">哔哔打车</p>
+	<a href="#s-one" value="1" style="font-weight:bolder;color:black;text-decoration:none" onclick="showuser(1)">个人信息</a>|
+	<a href="#s-two" value="2" style="font-weight:bolder;color:black;text-decoration:none" onclick="showuser(2)">乘车记录</a>|
+	<a href="#s-three" value="3" style="font-weight:bolder;color:black;text-decoration:none" onclick="showuser(3)">推荐景点</a>|
+	<a href="#s-four" value="4" style="font-weight:bolder;color:black;text-decoration:none" onclick="showuser(4)">服务排行</a>|
+	<a href="#s-five" value="5" style="font-weight:bolder;color:black;text-decoration:none" onclick="showuser(5)">提交订单</a>
+	<div id="container">
+		<section id="1" style="display:block;">
+		<h1 style="margin : 20px;margin-top:60px;">个人信息</h1>
+			<div id="left">
+				<img src="/bibitaxi/image/4.jpg" width=100px height=150px>
+				<table id="infor_list">
+					
+				</table>
+				<p style="margin-top:25%;margin-left:80%"><a href="update.html">修改信息</a></p>
+				</div>
+				<hr style="width:1px;height:500px;color:black;float:left;margin-left:50px;margin-top:-50px;"/>
+				<p style="color:black;margin-top:-40px;float:left;padding-left:30px;font-size:1.2em;">新闻列表</p><br/>
+			<div id="right">
+				
+			</div>
+		</section>
+		<section id="2" style="display:none;">
+			<h1 style="margin : 20px;margin-top:60px;">乘车记录</h1>
+			<div id="left">
+				<table id="record_list" style="padding-left:70px;">
+					<tr>
+						<td>时间</td>
+						<td>司机</td>
+						<td>目的地</td>
+						<td>评价</td>
+					</tr>
+					<tr>
+						<td>5.28</td>
+						<td>小红</td>
+						<td>大学城广大</td>
+						<td>是</td>
+					</tr>
+					<tr>
+						<td>5.29</td>
+						<td>小李</td>
+						<td>小洲村</td>
+						<td>否</td>
+					</tr>
+				</table>
+				</div>
+				<hr style="width:1px;height:500px;color:black;float:left;margin-left:50px;margin-top:-50px;"/>
+				<p style="color:black;margin-top:-40px;float:left;padding-left:30px;font-size:1.2em;">新闻列表</p><br/>
+			<div id="right1">
+				
+			</div>
+		</section>
+		<section id="3" style="display:none;">
+		<h1 style="margin : 20px;margin-top:60px;">推荐景点</h1>
+		<div id="left">
+				<table id="order">
+					<tr>
+						<td>目的地</td>
+						<td>推荐指数</td>
+						<td>好评指数</td>
+					</tr>
+					<tr>
+						<td>生物岛</td>
+						<td>三星</td>
+						<td>三星</td>
+						<td><a href="goPlace.html">点击去这里</a></td>
+					</tr>
+					<tr>
+						<td>岭南印象园</td>
+						<td>五星</td>
+						<td>五星</td>
+						<td><a href="goPlace.html">点击去这里</a></td>
+					</tr>
+					<tr>
+						<td>大学城医院</td>
+						<td>零星</td>
+						<td>三星</td>
+						<td><a href="goPlace.html">点击去这里</a></td>
+					</tr>
+				</table>
+			</div>
+			<hr style="width:1px;height:500px;color:black;float:left;margin-left:50px;margin-top:-50px;"/>
+				<p style="color:black;margin-top:-40px;float:left;padding-left:30px;font-size:1.2em;">新闻列表</p><br/>
+			<div id="right2">
+				
+			</div>
+		</section>
+		<section id="4" style="display:none;" >
+			<h1 style="margin : 20px;margin-top:60px;">服务排行</h1>
+			<div id="left">
+				<table id="rank_list" style="padding-left:90px;">
+					<tr>
+						<td>姓名</td>
+						<td>接单数量</td>
+						<td>用户评分</td>
+					</tr>
+					<tr>
+						<td>小明</td>
+						<td>10</td>
+						<td>4.6</td>
+					</tr>
+					<tr>
+						<td>小刘</td>
+						<td>12</td>
+						<td>4.5</td>
+					</tr>
+					<tr>
+						<td>小赵</td>
+						<td>8</td>
+						<td>4.4</td>
+					</tr>
+				</table>
+				</div>
+				<hr style="width:1px;height:500px;color:black;float:left;margin-left:50px;margin-top:-50px;"/>
+				<p style="color:black;margin-top:-40px;float:left;padding-left:30px;font-size:1.2em;">新闻列表</p><br/>
+			<div id="right3">
+				
+			</div>
+		</section>
+		<section id="5" style="display:none;" >
+			<h1 style="margin : 20px;margin-top:60px;">服务排行</h1>
+			<div id="left" style="color:black;">
+					<form method="post" action="/servlet/put">
+						&nbsp;&nbsp;&nbsp;你在哪里&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input style="margin-top:30px;" type="text" id="place" name="place" required><br/>
+						&nbsp;&nbsp;&nbsp;要到哪去&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="destination" name="destination" required><br/>
+						&nbsp;&nbsp;&nbsp;你的称呼&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="userName" name="userName" required><br/>
+						&nbsp;&nbsp;&nbsp;你的联系方式&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="phone" name="phoneNumber" required><br/>
+						&nbsp;&nbsp;&nbsp;<input type="submit" value="提交订单" style="margin-left:300px;cursor:pointer;">
+					</form>
+			</div>
+				<hr style="width:1px;height:500px;color:black;float:left;margin-left:50px;margin-top:-50px;"/>
+				<p style="color:black;margin-top:-40px;float:left;padding-left:30px;font-size:1.2em;">新闻列表</p><br/>
+			<div id="right4">
+				
+			</div>
+		</section>
+		</div>
+</article>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+body{
+	font-size : 15px;
+	font-family : "ºÚÌå";
+	background : url("../image/night.jpg");
+	background-size : 100%;
+	background-repeat : no-repeat;
+	background-position : fixed;
+	max-width : auto;
+	height : auto;
+	background-attachment:fixed;
+}
+
+#container{
+	position : relative;
+	width : 400px;
+	border-radius : 10px;
+	background-color : white;
+	height : auto;
+	margin-top : 13%;
+	left : 40%;
+	padding-left : 20px;
+}
+
+#register input[type=submit]:hover, #register input[type=reset]:hover{
+	background-color : white;
+	cursor : pointer;
+}
+
+#register input[type=submit]:active, #register input[type=reset]:active{
+	background-color : #ccefff;
+}
+
+#register input[type=submit], #register input[type=reset]{
+	font-size : 18px;
+	margin-top : 25px;
+	margin-left : 80px;
+	margin-right : 10px;
+	border-radius : 5px;
+	width : 70px;
+	height : 30px;
+	background-color : rgba(200, 200, 150, 0.4);
+	color : gray;
+	font-weight : bolder;
+}

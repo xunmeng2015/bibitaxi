@@ -1,0 +1,150 @@
+body{
+	font-family : "·ÂËÎ";
+	font-size : 1.3em;
+	background : url("../image/sample-1.jpg");
+	background-size : 80%;
+	background-position : 300px 30px;
+}
+article, div{
+	position : relative;
+}
+
+section {
+	display : block;
+	position : absolute;
+	top : 10px;
+	left : 0;
+	background : rgba(255,255,255,0.85);
+	color : #fff;
+	width : 100%;
+	min-height : 600px;
+	border-radius : 5px;	
+}
+
+section:first-of-type{
+	z-index : 2;
+}
+
+
+#header_driver{
+	min-width : 100%;
+	height : 40px;
+	background-color : black;
+	margin-top : -8px;
+	border-radius : 4px;
+}
+
+#header_driver p{
+	float : right;
+	font-size : 1.2em;
+	margin : 10px;
+	margin-right : 20px;
+	color : white;
+	font-weight : bolder;
+}
+
+
+#pic{
+	width : 30%;
+	height : 170px;
+	position : relative;
+	top : 18%;
+	border : 1px solid black;
+}
+
+h1{
+	color : black;
+	position : relative;
+}
+
+.main {
+	width : 60%;
+	margin : auto;
+	height : auto;
+}
+
+td{
+	font-size:1em;
+	text-align : center;
+	line-height : 50px;
+	color : black;
+	font-weight : bolder;
+	position : relative;
+	padding-left:10px;
+	white-space: nowrap;
+}
+
+#infor_list{
+	margin-top : 80px;
+}
+
+#left{
+	width : 43%;
+	border : 1px solid black;
+	height : 400px;
+	margin-left : 20px;
+	float : left;
+	overflow-y : scroll;
+	z-index : 2;
+}
+
+#left_list{
+	width : 50%;
+	border : 1px solid black;
+	height : 400px;
+	margin-left : 20px;
+	float : left;
+	overflow : scroll;
+	z-index : 2;
+}
+#right_list p{
+	color : black;
+	line-height : 20px;
+	width : 30%;	
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	text-align : left;
+	font-weight : bolder;
+	padding-left : 40px;
+}
+
+#right_list p:first-of-type{
+	margin-top:-10px;
+}
+
+
+#left img{
+	float : left;
+	padding-top : 80px;
+	padding-left : 50px;
+}
+
+#right p, #right1 p, #right2 p, #right3 p, #right4 p{
+	color : black;
+	line-height : 20px;
+	width : 80%;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	text-align : left;
+	padding-left : 10%;
+	font-weight : bolder;
+}
+
+#right p:first-of-type, #right1 p:first-of-type, #right2 p:first-of-type, #right3 p:first-of-type, #right4 p:first-of-type{
+	margin-top:-10px;
+}
+#right, #right1, #right2, #right3, #right4{
+	width : 45%;
+	float : left;
+}
+
+a{
+	color : black;
+	font-weight : bolder;
+}
+a:hover{
+	color : red;
+	text-decoration : none;
+}

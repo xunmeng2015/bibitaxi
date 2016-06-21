@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/login.css">
+<title>哔哔打车登陆</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<div id="container_login">
+	<section id="login_all">
+		<p style="padding-top : 50px;font-size : 20px;">用户登陆</p>
+		<form action="/bibi/check" method="post">
+			账号:&nbsp;&nbsp;&nbsp;<input style="height : 25px; font-size:13px" type="text" id="phone" name="phone" placeholder="请输入手机号码"	required autofocus><br/>
+			密码:&nbsp;&nbsp;&nbsp;<input style="margin-top:15px; height : 25px;" type="password" name="password" id="password" required><br/>
+			类型:&nbsp;&nbsp;&nbsp;<select style="margin-top:15px; height : 25px;width:100px;margin-right:70px;" name="type">
+				<option value="driver">司机</option>
+				<option value="user" selected>用户</option>
+				<select><br/>
+			<input type="submit" value="登陆" id="sub"><a href="register.html"><input type="button" value="注册"></a>
+		</form>
+	</section> 
+</div>
+</body>
+</html>

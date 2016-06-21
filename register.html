@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+a:hover{
+	color : red;
+}
+</style>
+<link rel="stylesheet" href="css/register.css">
+<title>哔哔打车注册</title>
+</head>
+
+<body>
+<div id="container">
+<section id="register">
+		<p style="font-size : 20px;padding-left : 150px;padding-top:13px;">用户注册</p>
+		<form action="/bibi/register" method="post">
+			姓名:&nbsp;&nbsp;&nbsp;<input style="height : 25px; font-size:13px;width:300px;" type="text" name="name" required autofocus><br/>
+			密码:&nbsp;&nbsp;&nbsp;<input style="margin-top:15px; height : 25px;width:300px;" type="password" name="password" placeholder="请输入至少6位符号" required><br/>
+			邮箱:&nbsp;&nbsp;&nbsp;<input style="margin-top:15px; height : 25px;width:300px;" placeholder="用于修改和找回密码" type="email" name="email" required><br/>
+			地址:&nbsp;&nbsp;&nbsp;<input style="margin-top:15px; height : 25px;width:300px;" type="text" name="address" required><br/>
+			手机号码:&nbsp;<input style="margin-top:15px; height : 25px;width:300px;" type="text" name="phoneNumber" placeholder="用于登陆，请记住" required></br>			
+			账户类型:&nbsp;<select style="margin-top:15px; height : 25px;width:100px;" name="type">
+				<option value="driver">司机</option>
+				<option value="user" selected>用户</option>
+				<select><br/>
+			<input type="submit" value="注册" id="sub"><input type="reset" value="重置">
+			<p style="margin-top:8px;padding-bottom:5px;margin-left:300px;"><a href="login.html" style="text-decoration:none;">返回登录界面</a></p>
+		</form>
+	</section>
+</div>
+<script src="js/javascript.js"></script>
+</body>
+</html>

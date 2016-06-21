@@ -1,0 +1,50 @@
+body{
+	font-size : 15px;
+	font-family : "ºÚÌå";
+	background : url("../image/night.jpg");
+	background-size : 100%;
+	background-repeat : no-repeat;
+	background-position : fixed;
+	max-width : auto;
+	height : auto;
+	background-attachment:fixed;
+}
+
+#container{
+	width : 310px;
+	height : auto;
+	padding-left : 20px;
+	border-radius : 10px;
+	position : relative;
+	margin-top : 13%;
+	left : 40%;
+	background-color : white;
+}
+
+input{
+	margin : 10px;
+	text-align : center;
+	margin-right : 30px;
+}
+
+input[type=button]:hover{
+	background-color : white;
+	cursor : pointer;
+}
+
+input[type=button]:active{
+	background-color : #ccefff;
+}
+
+input[type=button]{
+	font-size : 18px;
+	margin-top : 25px;
+	margin-left : 50px;
+	margin-right : 10px;
+	border-radius : 5px;
+	width : 70px;
+	height : 30px;
+	background-color : rgba(200, 200, 150, 0.4);
+	color : gray;
+	font-weight : bolder;
+}

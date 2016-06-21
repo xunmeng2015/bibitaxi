@@ -1,0 +1,46 @@
+body{
+	font-size : 15px;
+	font-family : "微软雅黑";
+	background : url("../image/night.jpg");
+	background-position : 0px -80px;
+	background-size : 100%;
+	background-repeat : no-repeat;
+	background-position : fixed;
+	max-width : auto;
+	height : auto;
+	font-family : "微软雅黑";
+	background-attachment:fixed;
+}
+
+#login_all{
+	width : 300px;
+	height : 300px;
+	background-color : white;
+	border-radius : 10px;
+	text-align : center;
+	position : relative;
+	top : 250px;
+	left : 43%;
+}
+
+#login_all input[type=submit]:hover, #login_all input[type=button]:hover{
+	background-color : white;
+	cursor : pointer;
+}
+
+#login_all input[type=submit]:active, #login_all input[type=button]:active{
+	background-color : #ccefff;
+}
+
+#login_all input[type=submit], #login_all input[type=button]{
+	font-size : 18px;
+	margin-top : 30px;
+	margin-left : 20px;
+	margin-right : 10px;
+	border-radius : 5px;
+	width : 70px;
+	height : 30px;
+	background-color : rgba(200, 200, 150, 0.4);
+	color : gray;
+	font-weight : bolder;
+}
